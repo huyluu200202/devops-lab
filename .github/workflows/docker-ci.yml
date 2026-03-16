@@ -28,3 +28,10 @@ jobs:
           context: .
           push: true
           tags: huyluu2002/devops-lab:latest
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: huyluu2002/devops-lab:latest

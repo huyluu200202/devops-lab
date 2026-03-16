@@ -14,6 +14,7 @@ spec:
     spec:
       containers:
       - name: devops-lab
-        image: huyluu2002/devops-lab:1.0
+        image: huyluu2002/devops-lab:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 3000
