@@ -33,5 +33,7 @@ jobs:
     steps:
       - name: Restart Kubernetes deployment
         run: |
+          export KUBECONFIG=/home/lth/.kube/config
+          kubectl get nodes
           kubectl rollout restart deployment devops-lab
           kubectl rollout status deployment devops-lab
